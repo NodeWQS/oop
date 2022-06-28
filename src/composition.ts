@@ -1,12 +1,12 @@
 // class composition
 
-export class Motor {
+class Motor {
     start(){
         console.log('engine started')
     }
 }
 
-class Car {
+export class Car {
     private engine: Motor
     constructor(){
         this.engine = new Motor()
